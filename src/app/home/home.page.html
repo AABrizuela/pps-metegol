@@ -1,0 +1,14 @@
+<div class="container">
+  <ion-backdrop class="backdrop" hidden></ion-backdrop>
+  <div class="atras" (click)="navegar('login')"><ion-icon name="caret-back-circle-outline"></ion-icon></div>
+  <div class="panel" id="panel">
+    <span class="titulo">Administrador</span>
+  </div>
+  <button id="crear" (click)="navegar('partido')">Crear partido</button>
+  <button (click)="navegar('listado-partidos')">Listado de partidos</button>
+  <button (click)="navegar('top-jugadores')">Mejores jugadores</button>
+</div>
+<div class="spinner-container" hidden id="casa">
+<div class="spinner-items"> 
+</div>
+</div>

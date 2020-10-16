@@ -1,0 +1,98 @@
+div.container{
+    background-image: url("../../assets/img/partidos.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: lightgrey;
+  
+    font-weight: bold;
+  
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+div.atras{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-size: 282%;
+}
+
+th.fotito{
+    width: 20%;
+}
+
+div.titulo{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #34973486;
+    & span {
+        margin-left: 10%;
+    }
+}
+
+span.titulo{
+    font-size: 2em;
+}
+
+div.tabla{
+    width: 100%;
+    height: 90%;
+    background-color: #34973486;
+    overflow: auto;
+}
+
+table.tablita{
+    width: 100%;
+    height: 100%;
+    border: solid 5px white;
+    border-collapse:    collapse;
+}
+
+th{
+    font-size: 1em;
+}
+
+img{
+    width: 55%;
+}
+tr, td {
+    border: solid 2px white;
+}
+tr.hover{
+    transform: scale(1.1);
+}
+
+/* #region spinner */
+.spinner-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(1, 1, 1, 0.789);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+  }
+  .spinner-items {
+  
+    width: 50px;
+    height: 50px;
+    background-image: url("../../assets/img/pelota-icon.png");
+    background-size: cover;
+    
+    -webkit-animation: spinner-loading linear .8s infinite;
+    animation: spinner-loading linear .8s infinite;
+  }
+  
+  @keyframes spinner-loading{
+    0% {
+        transform: rotate(0deg)
+    } to {
+        transform: rotate(1turn)
+    }
+  } 
+  /* #endregion */

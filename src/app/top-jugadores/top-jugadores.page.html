@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="atras" (click)="navegar('home')"><ion-icon name="caret-back-circle-outline"></ion-icon></div>
+  <div class="titulo"><span class="titulo">Mejores jugadores</span></div>
+  <div class="tabla">
+    <table class="tablita">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Partidos Ganados</th>    
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let jugador of this.ordenado">
+          <td>{{jugador.nombre}}</td>
+          <td>{{jugador.ganados}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="spinner-container" hidden id="spinTop">
+  <div class="spinner-items">
+  </div>
+  </div>

@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="atras" (click)="navegar('home')">
+    <ion-icon name="caret-back-circle-outline"></ion-icon>
+  </div>
+  <button class="fin" (click)="finalizar()">Finalizar</button>
+  <input type="text" id="jugUno" placeholder="Ingrese nombre de jugador" class="jugador">
+  <div class="puntos">
+    <ion-icon name="remove-outline" (click)="rest('uno')" class="suma"></ion-icon>
+    <span id="puntoJugUno" class="puntos" (click)="rest('uno')" class="suma">0</span>
+    <ion-icon name="add-outline" (click)="sum('uno')" class="suma"></ion-icon>
+  </div>
+  <input type="date" id="fecha" class="fecha">
+  <div class="puntos">
+    <ion-icon name="remove-outline" (click)="rest('dos')" class="suma"></ion-icon>
+    <span id="puntoJugDos" class="puntos">0</span>
+    <ion-icon name="add-outline" (click)="sum('dos')" class="suma"></ion-icon>
+  </div>
+  <input type="text" id="jugDos" placeholder="Ingrese nombre de jugador" class="jugador">
+  <div class="foto" id="desea" hidden>
+    <span class="desea">¿Desea tomar una foto?</span>
+    <div class="boton">
+      <button (click)="crear('foto')" class="no">Foto</button>
+      <button (click)="crear('no')" class="no">No</button>
+    </div>
+  </div>
+</div>
+<div class="spinner-container" hidden id="spinPartido">
+  <div class="spinner-items">
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="atras" (click)="navegar('home')"><ion-icon name="caret-back-circle-outline"></ion-icon></div>
+  <div class="titulo"><span class="titulo">Listado de Partidos</span></div>
+  <div class="tabla">
+    <table class="tablita">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Jugadores</th>
+          <th>Resultados</th>    
+          <th class="fotito">Foto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let partido of this.mostrar">
+          <td>{{partido.fecha}}</td>
+          <td>{{partido.jugadorUno + " vs. " + partido.jugadorDos}}</td>
+          <td>{{partido.resultado}}</td>
+          <td><img [src]="partido.foto" width="15%"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="spinner-container" hidden id="spinListado">
+  <div class="spinner-items">
+  </div>
+  </div>

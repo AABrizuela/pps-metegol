@@ -1,0 +1,92 @@
+div.container{
+  background-image: url("../../assets/img/fondo-login.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: lightgrey;
+
+  font-weight: bold;
+  font-family: Soccer;
+
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+button{
+  font-size: 1.5em;
+  color: whitesmoke;
+  width: 80%;
+  margin-bottom: 7%;
+  height: 13vh;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.801);
+  //border: dotted 3px black;
+  font-weight: bold;
+  border-radius: 5px;
+  line-height: 1.5;
+}
+
+div.atras{
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  font-size: 282%;
+}
+
+
+div.panel{
+  border-radius: 5%;
+  background: linear-gradient(135deg, rgba(227,240,132,1) 0%, rgba(255,255,0) 100%);
+  border: solid 5px rgb(20, 20, 20);
+  width: 75%;
+  height: 14%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span.titulo {
+  font-size: 150%;
+  color:rgb(20, 20, 20);
+}
+
+button:hover{
+    color: white;
+    transform: scale(1.1);
+}
+
+/* #region spinner */
+.spinner-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(1, 1, 1, 0.789);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 300;
+}
+.spinner-items {
+  
+  width: 50px;
+  height: 50px;
+  background-image: url("../../assets/img/pelota-icon.png");
+  background-size: cover;
+  
+  -webkit-animation: spinner-loading linear .8s infinite;
+  animation: spinner-loading linear .8s infinite;
+}
+
+@keyframes spinner-loading{
+  0% {
+      transform: rotate(0deg)
+  } to {
+      transform: rotate(1turn)
+  }
+} 
+/* #endregion */
